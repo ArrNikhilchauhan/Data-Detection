@@ -19,7 +19,6 @@ def calculate_ks(
 
     statistic, p_value = ks_2samp(reference, current)
 
-    print(p_value)
     drift_detected = p_value < alpha
 
     return {
